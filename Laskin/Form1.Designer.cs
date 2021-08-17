@@ -44,7 +44,7 @@
             this.btn_multi = new System.Windows.Forms.Button();
             this.button14 = new System.Windows.Forms.Button();
             this.btn_plus = new System.Windows.Forms.Button();
-            this.txt_input = new System.Windows.Forms.TextBox();
+            this.txt_total = new System.Windows.Forms.TextBox();
             this.btn_total = new System.Windows.Forms.Button();
             this.txt_current = new System.Windows.Forms.TextBox();
             this.btn_dot = new System.Windows.Forms.Button();
@@ -74,6 +74,7 @@
             this.btn_allClear.TabIndex = 2;
             this.btn_allClear.Text = "AC";
             this.btn_allClear.UseVisualStyleBackColor = false;
+            this.btn_allClear.Click += new System.EventHandler(this.btn_allClear_Click);
             // 
             // btn_9
             // 
@@ -216,6 +217,7 @@
             this.btn_minus.TabIndex = 13;
             this.btn_minus.Text = "-";
             this.btn_minus.UseVisualStyleBackColor = false;
+            this.btn_minus.Click += new System.EventHandler(this.btn_minus_Click);
             // 
             // btn_multi
             // 
@@ -228,6 +230,7 @@
             this.btn_multi.TabIndex = 14;
             this.btn_multi.Text = "*";
             this.btn_multi.UseVisualStyleBackColor = false;
+            this.btn_multi.Click += new System.EventHandler(this.btn_multi_Click);
             // 
             // button14
             // 
@@ -240,6 +243,7 @@
             this.button14.TabIndex = 15;
             this.button14.Text = "/";
             this.button14.UseVisualStyleBackColor = false;
+            this.button14.Click += new System.EventHandler(this.button14_Click);
             // 
             // btn_plus
             // 
@@ -252,17 +256,18 @@
             this.btn_plus.TabIndex = 16;
             this.btn_plus.Text = "+";
             this.btn_plus.UseVisualStyleBackColor = false;
+            this.btn_plus.Click += new System.EventHandler(this.btn_plus_Click);
             // 
-            // txt_input
+            // txt_total
             // 
-            this.txt_input.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.txt_input.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_input.ForeColor = System.Drawing.Color.Lime;
-            this.txt_input.Location = new System.Drawing.Point(84, 27);
-            this.txt_input.Name = "txt_input";
-            this.txt_input.Size = new System.Drawing.Size(281, 44);
-            this.txt_input.TabIndex = 17;
-            this.txt_input.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txt_total.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.txt_total.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_total.ForeColor = System.Drawing.Color.Lime;
+            this.txt_total.Location = new System.Drawing.Point(84, 27);
+            this.txt_total.Name = "txt_total";
+            this.txt_total.Size = new System.Drawing.Size(281, 44);
+            this.txt_total.TabIndex = 17;
+            this.txt_total.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // btn_total
             // 
@@ -275,6 +280,7 @@
             this.btn_total.TabIndex = 18;
             this.btn_total.Text = "=";
             this.btn_total.UseVisualStyleBackColor = false;
+            this.btn_total.Click += new System.EventHandler(this.btn_total_Click);
             // 
             // txt_current
             // 
@@ -296,7 +302,7 @@
             this.btn_dot.Name = "btn_dot";
             this.btn_dot.Size = new System.Drawing.Size(59, 53);
             this.btn_dot.TabIndex = 20;
-            this.btn_dot.Text = ".";
+            this.btn_dot.Text = ",";
             this.btn_dot.UseVisualStyleBackColor = false;
             this.btn_dot.Click += new System.EventHandler(this.btn_dot_Click);
             // 
@@ -308,7 +314,7 @@
             this.Controls.Add(this.btn_dot);
             this.Controls.Add(this.txt_current);
             this.Controls.Add(this.btn_total);
-            this.Controls.Add(this.txt_input);
+            this.Controls.Add(this.txt_total);
             this.Controls.Add(this.btn_plus);
             this.Controls.Add(this.button14);
             this.Controls.Add(this.btn_multi);
@@ -351,7 +357,7 @@
         private System.Windows.Forms.Button btn_multi;
         private System.Windows.Forms.Button button14;
         private System.Windows.Forms.Button btn_plus;
-        private System.Windows.Forms.TextBox txt_input;
+        private System.Windows.Forms.TextBox txt_total;
         private System.Windows.Forms.Button btn_total;
         private System.Windows.Forms.TextBox txt_current;
         private System.Windows.Forms.Button btn_dot;
