@@ -146,6 +146,7 @@ namespace Laskin
             {
                 current = "0";
                 txt_current.Text = current;
+                yhtäkuin = false;
             }
            
         }
@@ -164,6 +165,7 @@ namespace Laskin
             current = "0";
             txt_current.Text = "0";
             txt_total.Text = "";
+            yhtäkuin = false;
         }
 
         private void btn_plus_Click(object sender, EventArgs e)
